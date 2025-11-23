@@ -81,4 +81,3 @@ pip install dgl-cu130 -f https://data.dgl.ai/wheels/repo.html
 - `requirements.txt` 中已经包含一些固定版本用于本地环境（如 `torch==2.9.1+cu130`、`transformers==4.57.1`、`dgl==2.0.0`）。若要在不同机器上复现，请优先根据机器的 CUDA 版本安装对应的 PyTorch 与 DGL，然后再安装其余库。
 - 在 Windows 上启用 DGL GPU 支持常见问题较多，若出现 DGL 的 GPU 算子报错（如 "Device API cuda is not enabled"），建议在 Linux 环境中做 GPU+DGL 的训练。
 
-如果你希望我把上述安装步骤加入到 `requirements-dev.txt` 或生成针对不同平台的详细安装脚本，我可以继续处理。
