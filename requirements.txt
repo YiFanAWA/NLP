@@ -1,0 +1,18 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+--find-links https://download.pytorch.org/whl/torch_stable.html
+# 与本地环境一致的依赖（由自动检测生成）
+# Python: 3.10.18
+torch==2.9.1+cu130
+transformers==4.57.1
+pyhocon
+boltons
+sqlitedict
+# 使用已安装的 DGL 版本（CPU 或 GPU 取决于你的环境）
+dgl==2.0.0
+networkx==3.4.2
+
+# 说明：
+# - PyTorch 的 +cuXXX 后缀表示二进制 wheel 的 CUDA 版本。通常推荐使用 conda 或官方 wheel 安装
+#   以确保与本地 CUDA 驱动兼容；如果使用 pip 安装，请确保选对对应的 +cu 版本。
+# - 如果你要在不同机器上复现（尤其没有 GPU 的机器），可以把 torch 替换为 cpu-only wheel 或在
+#   README 中列出安装步骤。
